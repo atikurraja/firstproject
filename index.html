@@ -282,28 +282,58 @@
                                                                     </i>Google+
                                                                   </a><p> <br><p>
                                                       </div>
-                                                      <div>
-                                                        <p>Sign In Your Account</p>
+                                                      <div><br><br>
+                                                        <p>Sign In Your Account</p><br>
                                                       </div>
-                                                          <div class="col">
-
-                                                                       <input type="text" name="username" placeholder="Username" required>
-                                                                       <input type="text" name="password" placeholder="Password" required>
-                                                                       <input type="submit" value="Login">
 
 
-                                                                     </div>
+          <!-------------  /* Loginnnnnnn Loginnnnnnn Loginnnnnnn Loginnnnnnn Loginnnnnnn  */    -->
+            <!-------------  /* Loginnnnnnn Loginnnnnnn Loginnnnnnn Loginnnnnnn Loginnnnnnn  */    -->
+                                                  <button onclick="document.getElementById('id01').style.display='block'" style="width:100%;">Login</button>
+
+                                                            <div id="id01" class="modal">
+
+                                                            <form class="modal-content animate" action="/action_page.php" method="post">
+                                                            <div class="imgcontainer">
+                                                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                                            <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
+                                                            </div>
+
+                                                            <div class="container">
+                                                            <label for="uname"><b>Username</b></label>
+                                                            <input type="text" placeholder="Enter Username" name="uname" required>
+
+                                                            <label for="psw"><b>Password</b></label>
+                                                            <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                                            <button type="submit">Login</button>
+                                                            <label>
+                                                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                                                            </label>
+                                                            </div>
+
+                                                            <div class="container" style="background-color:#f1f1f1">
+                                                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                                            <span class="psw">Forgot <a href="#">password?</a></span>
+                                                            </div>
+                                                            </form>
+                                                            </div>
+
+                                                            <script>
+                                                            // Get the modal
+                                                            var modal = document.getElementById('id01');
+
+                                                            // When the user clicks anywhere outside of the modal, close it
+                                                            window.onclick = function(event) {
+                                                            if (event.target == modal) {
+                                                            modal.style.display = "none";
+                                                            }
+                                                            }
+                                                          </script>
 
                                          </div>
                                       </form>
 
-                                         <div class="bottom-container">
-                                            <div class="row">
-                                              <div class="col">
-                                                <a href="#" style="color:black" class="btn">Forgot password?</a>
-                                              </div>
-                                            </div>
-                                          </div>
 
 
                                 </div>
@@ -312,7 +342,7 @@
 <!-------------1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111-->
                 <div class="w3-row-padding w3-center w3-margin-top">
                 <div class="w3-third">
-                  <div class="w3-card w3-container" style="min-height: 700px">
+                  <div class="w3-card w3-container" style="min-height: 750px">
                     <h3>Star Tower</h3>
                     <i class="fa  w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
                     <div >
@@ -326,7 +356,7 @@
 
 <!---------22222222222222222222222222222222222222222222222222222222222222222222222222222------>
                 <div class="w3-third">
-                  <div class="w3-card w3-container" style="min-height:700px">
+                  <div class="w3-card w3-container" style="min-height:750px">
                     <h3>HBR Tower</h3>
                     <i class="fa  w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
                     <div >
@@ -339,7 +369,7 @@
                 </div>
 <!----------333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333----->
                 <div class="w3-third">
-                  <div class="w3-card w3-container" style="min-height:700px">
+                  <div class="w3-card w3-container" style="min-height:750px">
                   <h3>Contact Us</h3>
                   <i class="fa  w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
 
@@ -357,19 +387,7 @@
                                          </div>
                                        </div>
 
-                                       <div class="row">
 
-                                         <div class="col-75">
-                                            <div> <h6 class="h-pos"> Gender </h6>
-                                            <div class="h-pos-next">
-                                              <input type="radio" name="gender" value="male"> Male<br>
-                                              <input type="radio" name="gender" value="female"> Female<br>
-                                              <input type="radio" name="gender" value="other"> Other<br>
-
-                                           </div>
-                                         </div>
-                                       </div>
-                                        </div>
 
 
                                        <div class="row">
@@ -646,6 +664,21 @@
                                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
                                          </div>
                                        </div>
+
+                                       <div class="row">
+
+                                         <div class="col-75">
+                                            <div> <p class="h-pos"> Gender </p>
+                                            <div class="h-pos-next">
+                                              <input type="radio" name="gender" value="male"> Male<br>
+                                              <input type="radio" name="gender" value="female"> Female<br>
+                                              <input type="radio" name="gender" value="other"> Other<br>
+
+                                           </div>
+                                         </div>
+                                       </div>
+                                        </div>
+
                                        <div class="row">
                                          <input type="submit" value="Submit">
                                        </div>
@@ -668,11 +701,11 @@
       <div id="content_wraffer">
 
 
-                                   <div><article><p align="justify">
+                                   <div ><article><p align="justify" class="paragrph-fixed">
                                      <br>
                                     Primeasia University was founded on an agenda of social responsibilites to provide higher education to all.Since higher education is the most effective tool to meet today’s diversified social challenges including population explosion, illiteracy, poverty, food insecurity, and depleting naturally endowed resources while, side-by-side, entrepreneurship, leadership, and good governance in the society. It is a key to intellectual growth that allows one to develop new models and standards and to be guided by strong moral reasoning, ethics, dignity, and enthusiasm.
                                     </p></article>
-                                    <br>>
+                                    <br>
                                    </div>
 
                                    <div><p>
