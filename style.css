@@ -401,12 +401,23 @@ input[type=submit]:hover {
   margin:1%;
 
 }
+
+.atik-coustom {
+  width: 460px;
+  height: 100px;
+  padding: 50px;
+  float: right;
+
+}
+
 /* sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss*/
 /* bbbbbbbbbbb       slide show      slide show   slide show   slide show      bbbbbbbbbbbbbbbbbbbbb*/
 
-
-
 * {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
 
 
 /* Slideshow container */
