@@ -403,9 +403,9 @@ input[type=submit]:hover {
 }
 
 .atik-coustom {
-  width: 460px;
+  width: 400px;
   height: 100px;
-  padding: 50px;
+  padding: 10px;
   float: right;
 
 }
