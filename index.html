@@ -90,6 +90,7 @@
                 <!---------------- content ddddddddddddddddddddddddddddddd-------------content start------------------>
                 <!---------------- content ddddddddddddddddddddddddddddddd-------------content start------------------>
                 <!---------------- SLIDE SHOW --------------  SLIDE SHOW -------  SLIDE SHOW ------  SLIDE SHOW ------>
+                <div id="before-menu"></div>
 
                           <div >
 
@@ -180,33 +181,26 @@
                                       </div>
 
                                       <script>
-                                              var slideIndex = 1;
-                                              showSlides(slideIndex);
+                                          var slideIndex = 0;
+                                          showSlides();
 
-                                              function plusSlides(n) {
-                                                showSlides(slideIndex += n);
-                                              }
-
-                                              function currentSlide(n) {
-                                                showSlides(slideIndex = n);
-                                              }
-
-                                              function showSlides(n) {
-                                                var i;
-                                                var slides = document.getElementsByClassName("mySlides");
-                                                var dots = document.getElementsByClassName("dot");
-                                                if (n > slides.length) {slideIndex = 1}
-                                                if (n < 1) {slideIndex = slides.length}
-                                                for (i = 0; i < slides.length; i++) {
-                                                    slides[i].style.display = "none";
-                                                }
-                                                for (i = 0; i < dots.length; i++) {
-                                                    dots[i].className = dots[i].className.replace(" active", "");
-                                                }
-                                                slides[slideIndex-1].style.display = "block";
-                                                dots[slideIndex-1].className += " active";
-                                              }
-                                            </script>
+                                          function showSlides() {
+                                            var i;
+                                            var slides = document.getElementsByClassName("mySlides");
+                                            var dots = document.getElementsByClassName("dot");
+                                            for (i = 0; i < slides.length; i++) {
+                                              slides[i].style.display = "none";
+                                            }
+                                            slideIndex++;
+                                            if (slideIndex > slides.length) {slideIndex = 1}
+                                            for (i = 0; i < dots.length; i++) {
+                                              dots[i].className = dots[i].className.replace(" active", "");
+                                            }
+                                            slides[slideIndex-1].style.display = "block";
+                                            dots[slideIndex-1].className += " active";
+                                            setTimeout(showSlides, 2000); // Change image every 2 seconds
+                                          }
+                                          </script>
 
                           </div>
 
@@ -286,14 +280,15 @@
 
           <!-------------  /* Loginnnnnnn Loginnnnnnn Loginnnnnnn Loginnnnnnn Loginnnnnnn  */    -->
             <!-------------  /* Loginnnnnnn Loginnnnnnn Loginnnnnnn Loginnnnnnn Loginnnnnnn  */    -->
-                                                  <button onclick="document.getElementById('id01').style.display='block'" style="width:100%;">Login</button>
 
-                                                            <div id="id01" class="modal">
+                                                     <button onclick="document.getElementById('id01').style.display='block'" style="width:100%;">Login</button>
 
-                                                            <form class="modal-content animate" action="/action_page.php" method="post">
+                                                            <div id="id01" class="modal ">
+                                                           <div class="atik-coustom" >
+                                                            <form class="modal-content animate " action="https://www.w3schools.com/action_page.php" method="post">
                                                             <div class="imgcontainer">
                                                             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                                                            <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
+                                                            <img src="https://www.primeasia.edu.bd/resources/images/university_logo.png" alt="Avatar" class="avatar">
                                                             </div>
 
                                                             <div class="container">
@@ -315,6 +310,9 @@
                                                             </div>
                                                             </form>
                                                             </div>
+
+                                                            </div>
+
 
                                                             <script>
                                                             // Get the modal
