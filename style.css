@@ -116,6 +116,28 @@ body {
     margin-top:1px;
 }
 
+#content_wraffer{
+    background-color:white;
+    width:100%;
+    height:auto;
+    margin-top:1px;
+    margin-bottom:1px;
+    margin-left:1px;
+    margin-right:20px;
+
+}
+#article_wraffer{
+    background-color:white;
+    width:98%;
+    height:auto;
+    margin-top:1px;
+
+    padding: 8px;
+
+}
+
+
+
 #header_wraffer{
     background-color:white;
     width:100%;
@@ -159,6 +181,14 @@ body {
            color: white;
            padding: 20px;
            font-size: 10px;
+}
+
+
+
+.text-color-login {
+ color: white;
+ padding: 20px;
+ font-size: 17px;
 }
 
 
@@ -446,7 +476,7 @@ input[type=submit]:hover {
 
  /* Loginnnnnnn Loginnnnnnn Loginnnnnnn Loginnnnnnn Loginnnnnnn  */
   /* Loginnnnnnn Loginnnnnnn Loginnnnnnn Loginnnnnnn Loginnnnnnn  */
-   /* Loginnnnnnn Loginnnnnnn Loginnnnnnn Loginnnnnnn Loginnnnnnn  */
+   /* Loginnnnnnn Loginnnnnnn Loginnnnnnn Loginnnnnnn Loginnnnnnn /////////////////////////////////////// */
 
    /* Full-width input fields */
 input[type=text], input[type=password] {
